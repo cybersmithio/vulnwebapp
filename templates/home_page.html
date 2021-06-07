@@ -1,8 +1,16 @@
 <html>
 <body>
 <h1>Hello world!</h1>
-<p>Would you like to see a <a href="/images/?imageurl=http://192.168.1.243:5000/static/images/cat.jpeg">cat</a>,
+<p>Would you like to see a <a href="/static/images/cat.jpeg">cat</a>,
     <a href="/static/images/dog.jpeg">dog</a>,
     or <a href="/images/?imageurl=https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Adonis_blue_%28Polyommatus_bellargus%29_male_underside_2.jpg/1280px-Adonis_blue_%28Polyommatus_bellargus%29_male_underside_2.jpg">butterfly</a>?
+
+<p>Did you need to ping a system?</p>
+<form method="GET" action="/ping/">
+    Target IP: <input type="text" name="ipaddress" placeholder="Enter ip here">
+</form>
+
+
+<p><a href="/here/is/my/broken/link">Broken link</a></p>
 </body>
 </html>

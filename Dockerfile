@@ -1,5 +1,6 @@
 FROM python:3.8
 
+RUN apt-get update && apt-get
 COPY requirements.txt vulnwebapp.py ./
 RUN pip install --upgrade -vvv pip
 RUN pip install --no-cache-dir -r requirements.txt
